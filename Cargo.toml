@@ -6,3 +6,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+ethers = "2.0"
+tokio = {version = "1.33.0", features = ["full"]}
+hex = "0.4.3"
+eyre = "0.6.8"
+clap = "4.4.6"
+
+[[bin]]
+name = "evm_ping"
+path = "src/evm_node_ping.rs"
